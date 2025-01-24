@@ -56,70 +56,71 @@ function PlaceCardItem({ place }) {
     };
 
     const containerStyle = {
-        marginTop: '1rem', // Equivalent to my-4
-        backgroundColor: '#F9FAFB', // Equivalent to bg-gray-50
-        padding: '0.5rem', // Equivalent to p-2
         display: 'flex',
-        gap: '0.5rem', // Equivalent to gap-2
-        borderRadius: '0.5rem', // Equivalent to rounded-lg
+        flexDirection: 'column', // Stack items vertically for smaller screens
+        gap: '0.5rem',
+        backgroundColor: '#F9FAFB',
+        padding: '1rem',
+        borderRadius: '0.5rem',
+        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
         cursor: 'pointer',
         transition: 'all 0.3s',
-    };
-
-    const containerHoverStyle = {
-        transform: 'scale(1.05)', // Equivalent to hover:scale-105
-        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', // Equivalent to hover:shadow-md
+        width: '100%', // Ensure it fits mobile screen width
+        maxWidth: '350px', // Limit max width for better readability
+        margin: '0 auto', // Center on the page
     };
 
     const imageStyle = {
-        width: '250px',
-        height: '150px',
-        borderRadius: '0.75rem', // Equivalent to rounded-xl
+        width: '100%', // Make image responsive
+        height: '200px', // Fixed height for consistency
+        borderRadius: '0.75rem',
         objectFit: 'cover',
     };
 
-    const textStyle = {
-        fontSize: '0.875rem', // Equivalent to text-sm
-        color: '#4B5563', // Equivalent to text-gray-500
+    const textContainerStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-start', // Align text to the left
+        gap: '0.25rem', // Add spacing between text items
     };
 
     const orangeTextStyle = {
-        color: '#FB923C', // Equivalent to text-orange-600
+        color: '#FB923C',
         fontWeight: '500',
+        fontSize: '0.875rem',
     };
 
     const blueTextStyle = {
-        color: '#2563EB', // Equivalent to text-blue-700
+        color: '#2563EB',
         fontSize: '0.875rem',
     };
 
     const yellowTextStyle = {
-        color: '#F59E0B', // Equivalent to text-yellow-500
+        color: '#F59E0B',
         fontSize: '0.875rem',
     };
 
     return (
-        <div>
+        <div style={{ margin: '1rem 0' }}>
             <Link
                 to={`https://www.google.com/maps/search/?api=1&query=${place?.placeName},${place?.geoCoordinates}`}
                 target="_blank"
+                style={{ textDecoration: 'none' }}
             >
-                <div style={containerStyle} onMouseOver={() => (containerStyle = { ...containerStyle, ...containerHoverStyle })} onMouseOut={() => (containerStyle = { ...containerStyle, ...containerHoverStyle })}>
-                    <div style={{ paddingTop: '0.5rem', marginLeft: '0.75rem' }}>
-                        <img
-                            src={photoUrl || getRandomUniqueImage()} // Use fetched image or unique random image
-                            style={imageStyle}
-                            alt={place.placeName || 'Place'}
-                        />
-                    </div>
-                    <div>
+                <div style={containerStyle}>
+                    <img
+                        src={photoUrl || getRandomUniqueImage()}
+                        style={imageStyle}
+                        alt={place.placeName || 'Place'}
+                    />
+                    <div style={textContainerStyle}>
                         <h2 style={orangeTextStyle}>{place.time}</h2>
-                        <h2 style={{ fontWeight: 'bold' }}>{place.placeName}</h2>
-                        <p style={textStyle}>{place.placeDetails}</p>
+                        <h2 style={{ fontWeight: 'bold', fontSize: '1rem' }}>{place.placeName}</h2>
+                        <p style={{ color: '#4B5563', fontSize: '0.875rem' }}>{place.placeDetails}</p>
                         <h2 style={blueTextStyle}>{place.ticketPricing}</h2>
                         <h2 style={yellowTextStyle}>⭐{place.rating}</h2>
                     </div>
-                    <div style={{ marginTop: '9rem' }}>
+                    <div style={{ alignSelf: 'flex-end' }}>
                         <Button>
                             <FaLocationDot />
                         </Button>
