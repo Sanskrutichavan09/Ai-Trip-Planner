@@ -301,5 +301,19 @@ button:disabled {
 }
 
 button:hover:not(:disabled) {
-  background-color: #45a049;
+  background-color: #14aac8;
+}
+/* Add this CSS to your Createtrip.css file */
+
+.reload-icon {
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

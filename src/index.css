@@ -2,33 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --transition-duration: 0.3s;
+  --primary-color: #646cff;
+  --hover-color: #535bf2;
+  --button-bg-color: #1a1a1a;
+  --button-hover-border: #646cff;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--primary-color);
   text-decoration: inherit;
+  transition: color var(--transition-duration) ease;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--hover-color);
 }
 
 body {
- 
- 
+  background-color: #f4f4f4;
+  transition: background-color var(--transition-duration) ease;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  transition: transform var(--transition-duration) ease;
 }
 
 button {
@@ -38,13 +41,16 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--button-bg-color);
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color var(--transition-duration), transform var(--transition-duration);
 }
+
 button:hover {
-  border-color: #646cff;
+  border-color: var(--button-hover-border);
+  transform: translateY(-3px);
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -55,10 +61,80 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
+  }
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Smooth Fade In for Page */
+body {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Cards with Hover Effects */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 350px;
+  transition: box-shadow var(--transition-duration), transform var(--transition-duration);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform var(--transition-duration);
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+
+  .card {
+    width: 100%;
+    margin: 5px 0;
   }
 }
