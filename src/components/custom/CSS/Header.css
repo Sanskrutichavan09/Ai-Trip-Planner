@@ -1,0 +1,406 @@
+/* Main Container */
+.header-container {
+    padding: 1rem; /* p-3 */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* shadow-sm */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+  }
+  
+  /* Logo */
+  .header-logo {
+    height: 5rem; /* h-20 */
+    width: auto;
+  }
+  
+  /* User Menu */
+  .user-menu {
+    display: flex;
+    gap: 1rem; /* gap-4 */
+    align-items: center;
+  }
+  
+  .user-avatar {
+    border-radius: 50%;
+    width: 2.375rem; /* w-[38px] */
+    height: 2.375rem; /* h-[38px] */
+  }
+  
+  /* Button Style */
+  .button-outline {
+    border-radius: 9999px; /* rounded-full */
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 2px solid #1F2937; /* Tailwind's default gray border */
+    color: #1F2937;
+    cursor: pointer;
+  }
+  
+  .button-outline:hover {
+    background-color: #F3F4F6; /* light gray background on hover */
+  }
+  
+  /* Dialog Content */
+  .dialog-content {
+    background-color: white;
+    padding: 1.5rem; /* p-6 */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  }
+  
+  /* Dialog Header */
+  .dialog-header h2 {
+    font-weight: 700; /* font-bold */
+    font-size: 1.125rem; /* text-lg */
+    margin-top: 1.5rem; /* mt-6 */
+    color: #2D3748; /* text-gray-800 */
+  }
+  
+  .dialog-description p {
+    color: #4A5568; /* text-gray-600 */
+    margin-top: 0.5rem; /* mt-2 */
+  }
+  
+  /* Google Sign-In Button */
+  .sign-in-button {
+    width: 100%;
+    margin-top: 1.25rem; /* mt-5 */
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: #3B82F6; /* bg-blue-500 */
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem; /* rounded-md */
+    cursor: pointer;
+  }
+  
+  .sign-in-button:hover {
+    background-color: #2563EB; /* hover:bg-blue-600 */
+    transition: all 0.2s ease;
+  }
+  
+  /* Google Icon */
+  .google-icon {
+    width: 1.75rem; /* h-7 */
+    height: 1.75rem; /* w-7 */
+  }
+  
+  /* Logout Option */
+  .logout-option {
+    cursor: pointer;
+    color: #2926dc; /* Tailwind's red-600 for logout */
+  }
+  /* Main Container */
+.header-container {
+  padding: 1rem; /* p-3 */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* shadow-sm */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem; /* px-4 */
+}
+
+@media (max-width: 700px) {
+  .header-container {
+    padding-left: 0.75rem; /* Adjust padding for smaller screens */
+    padding-right: 0.75rem; /* Adjust padding for smaller screens */
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-container {
+    padding-left: 0.5rem; /* Adjust further for smaller screens */
+    padding-right: 0.5rem; /* Adjust further for smaller screens */
+  }
+}
+
+@media (max-width: 200px) {
+  .header-container {
+    padding-left: 0.25rem; /* Minimal padding for very small screens */
+    padding-right: 0.25rem; /* Minimal padding for very small screens */
+  }
+}
+
+/* Logo */
+.header-logo {
+  height: 5rem; /* h-20 */
+  width: auto;
+}
+
+@media (max-width: 700px) {
+  .header-logo {
+    height: 4rem; /* Smaller logo size for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .header-logo {
+    height: 3.5rem; /* Even smaller logo for very small screens */
+  }
+}
+
+@media (max-width: 200px) {
+  .header-logo {
+    height: 3rem; /* Smallest logo for tiny screens */
+  }
+}
+
+/* User Menu */
+.user-menu {
+  display: flex;
+  gap: 1rem; /* gap-4 */
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .user-menu {
+    gap: 0.75rem; /* Reduced gap for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .user-menu {
+    gap: 0.5rem; /* Further reduced gap for very small screens */
+  }
+}
+
+@media (max-width: 200px) {
+  .user-menu {
+    gap: 0.25rem; /* Minimum gap for tiny screens */
+  }
+}
+
+/* User Avatar */
+.user-avatar {
+  border-radius: 50%;
+  width: 2.375rem; /* w-[38px] */
+  height: 2.375rem; /* h-[38px] */
+}
+
+@media (max-width: 700px) {
+  .user-avatar {
+    width: 2rem; /* Smaller avatar size for smaller screens */
+    height: 2rem; /* Smaller avatar size for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .user-avatar {
+    width: 1.75rem; /* Further reduced avatar size */
+    height: 1.75rem; /* Further reduced avatar size */
+  }
+}
+
+@media (max-width: 200px) {
+  .user-avatar {
+    width: 1.5rem; /* Smallest avatar for tiny screens */
+    height: 1.5rem; /* Smallest avatar for tiny screens */
+  }
+}
+
+/* Button Style */
+.button-outline {
+  border-radius: 9999px; /* rounded-full */
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 2px solid #1F2937; /* Tailwind's default gray border */
+  color: #1F2937;
+  cursor: pointer;
+}
+
+.button-outline:hover {
+  background-color: #F3F4F6; /* light gray background on hover */
+}
+
+@media (max-width: 700px) {
+  .button-outline {
+    padding: 0.5rem 0.75rem; /* Reduced padding for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .button-outline {
+    padding: 0.4rem 0.6rem; /* Further reduced padding for very small screens */
+  }
+}
+
+@media (max-width: 200px) {
+  .button-outline {
+    padding: 0.3rem 0.5rem; /* Minimal padding for very tiny screens */
+  }
+}
+
+/* Dialog Content */
+.dialog-content {
+  background-color: white;
+  padding: 1.5rem; /* p-6 */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+}
+
+@media (max-width: 700px) {
+  .dialog-content {
+    padding: 1rem; /* Reduced padding for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .dialog-content {
+    padding: 0.75rem; /* Further reduced padding for very small screens */
+  }
+}
+
+@media (max-width: 200px) {
+  .dialog-content {
+    padding: 0.5rem; /* Minimal padding for tiny screens */
+  }
+}
+
+/* Dialog Header */
+.dialog-header h2 {
+  font-weight: 700; /* font-bold */
+  font-size: 1.125rem; /* text-lg */
+  margin-top: 1.5rem; /* mt-6 */
+  color: #2D3748; /* text-gray-800 */
+}
+
+@media (max-width: 700px) {
+  .dialog-header h2 {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin-top: 1.25rem; /* Reduced margin for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .dialog-header h2 {
+    font-size: 0.875rem; /* Smaller font size for very small screens */
+    margin-top: 1rem; /* Further reduced margin for small screens */
+  }
+}
+
+@media (max-width: 200px) {
+  .dialog-header h2 {
+    font-size: 0.75rem; /* Smallest font size for very tiny screens */
+    margin-top: 0.75rem; /* Minimum margin for tiny screens */
+  }
+}
+
+/* Dialog Description */
+.dialog-description p {
+  color: #4A5568; /* text-gray-600 */
+  margin-top: 0.5rem; /* mt-2 */
+}
+
+@media (max-width: 700px) {
+  .dialog-description p {
+    font-size: 0.875rem; /* Smaller font size for smaller screens */
+    margin-top: 0.25rem; /* Reduced margin for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .dialog-description p {
+    font-size: 0.75rem; /* Smaller font size for very small screens */
+    margin-top: 0.25rem; /* Further reduced margin for very small screens */
+  }
+}
+
+@media (max-width: 200px) {
+  .dialog-description p {
+    font-size: 0.625rem; /* Smallest font size for tiny screens */
+    margin-top: 0.25rem; /* Minimum margin for tiny screens */
+  }
+}
+
+/* Google Sign-In Button */
+.sign-in-button {
+  width: 100%;
+  margin-top: 1.25rem; /* mt-5 */
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: #3B82F6; /* bg-blue-500 */
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem; /* rounded-md */
+  cursor: pointer;
+}
+
+.sign-in-button:hover {
+  background-color: #2563EB; /* hover:bg-blue-600 */
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 700px) {
+  .sign-in-button {
+    padding: 0.75rem 0.75rem; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .sign-in-button {
+    padding: 0.75rem 0.5rem; /* Further reduced padding for very small screens */
+  }
+}
+
+@media (max-width: 200px) {
+  .sign-in-button {
+    padding: 0.75rem 0.25rem; /* Minimal padding for tiny screens */
+  }
+}
+
+/* Google Icon */
+.google-icon {
+  width: 1.75rem; /* h-7 */
+  height: 1.75rem; /* w-7 */
+}
+
+@media (max-width: 700px) {
+  .google-icon {
+    width: 1.5rem; /* Smaller icon size for smaller screens */
+    height: 1.5rem; /* Smaller icon size for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .google-icon {
+    width: 1.25rem; /* Further reduced icon size for very small screens */
+    height: 1.25rem; /* Further reduced icon size for very small screens */
+  }
+}
+
+@media (max-width: 200px) {
+  .google-icon {
+    width: 1rem; /* Smallest icon size for tiny screens */
+    height: 1rem; /* Smallest icon size for tiny screens */
+  }
+}
+
+/* Logout Option */
+.logout-option {
+  cursor: pointer;
+  color: #2926dc; /* Tailwind's red-600 for logout */
+}
+
+@media (max-width: 700px) {
+  .logout-option {
+    font-size: 0.875rem; /* Smaller font size for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .logout-option {
+    font-size: 0.75rem; /* Further reduced font size for very small screens */
+  }
+}
+
+@media (max-width: 200px) {
+  .logout-option {
+    font-size: 0.625rem; /* Smallest font size for tiny screens */
+  }
+}

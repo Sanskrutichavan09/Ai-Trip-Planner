@@ -1,0 +1,29 @@
+{
+  "images": [
+    "/hotels/hotel1.jpg",
+    "/hotels/hotel2.jpg",
+    "/hotels/hotel3.jpg",
+    "/hotels/hotel4.jpg",
+    "/hotels/hotel5.jpg",
+    "/hotels/hotel6.jpg",
+    "/hotels/hotel7.jpg",
+    "/hotels/hotel8.jpg",
+    "/hotels/hotel9.jpg",
+    "/hotels/hotel10.jpg"
+  ],
+  "places": [
+    "/places/place1.webp",
+    "/places/place2.jpg",
+    "/places/place3.jpg",
+    "/places/place4.jpg",
+    "/places/place5.jpg",
+    "/places/place6.jpg",
+    "/places/place7.jpg"
+  ],
+  "city": [
+    
+    "/city/city1.jpeg",
+    "/city/city2.jpg",
+    "/city/city3.jpg"
+  ]
+}

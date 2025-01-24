@@ -1,0 +1,528 @@
+#root {
+ 
+  
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* Global styles for all screen sizes */
+@media (max-width: 768px) {
+  .containerStyle {
+    padding-top: 2rem;  /* Reduced padding for mobile */
+    padding-bottom: 2rem;  /* Reduced padding for mobile */
+  }
+
+  .imageStyle {
+    width: 90%;  /* Set image width to 90% on mobile */
+    height: 250px;  /* Reduced height for better fit on mobile */
+  }
+
+  .infoContainerStyle {
+    padding-left: 1rem;  /* Added padding for smaller screens */
+    padding-right: 1rem;  /* Added padding for smaller screens */
+  }
+
+  .titleStyle {
+    font-size: 1.2rem;  /* Reduced font size for mobile */
+  }
+
+  .badgeStyle {
+    font-size: 0.9rem;  /* Reduced font size for mobile */
+    padding: 0.25rem 0.75rem;  /* Adjusted padding */
+  }
+
+  .flexContainer {
+    flex-direction: column;  /* Stack elements vertically on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .imageStyle {
+    width: 100%;  /* Make image fill the entire width on very small screens */
+    height: 200px;  /* Further reduce the height on very small screens */
+  }
+
+  .titleStyle {
+    font-size: 1.1rem;  /* Further reduce font size */
+  }
+
+  .badgeStyle {
+    font-size: 0.8rem;  /* Further reduce badge font size */
+    padding: 0.2rem 0.5rem;  /* Adjust badge padding */
+  }
+
+  .infoContainerStyle {
+    padding-left: 0.5rem;  /* Even more padding reduction */
+    padding-right: 0.5rem;  /* Even more padding reduction */
+  }
+}
+
+/* Additional mobile adjustments for ultra-small screens */
+@media (max-width: 300px) {
+  .imageStyle {
+    width: 100%;  /* Image takes up full width */
+    height: 150px;  /* Reduced height further */
+  }
+
+  .titleStyle {
+    font-size: 1rem;  /* Further reduced font size */
+  }
+
+  .badgeStyle {
+    font-size: 0.7rem;  /* Even smaller font size */
+    padding: 0.15rem 0.4rem;  /* Further reduced padding */
+  }
+
+  .containerStyle {
+    padding-top: 1rem;  /* Even smaller padding for extremely small screens */
+    padding-bottom: 1rem;
+  }
+
+  .infoContainerStyle {
+    padding-left: 0.3rem;  /* Further reduced padding */
+    padding-right: 0.3rem;  /* Further reduced padding */
+  }
+}
+/* Global styles for all screen sizes */
+@media (max-width: 768px) {
+  .cardStyle {
+    width: 100%;  /* Full width on mobile */
+    padding: 1rem;  /* Adequate padding for small screens */
+  }
+
+  .imgStyle {
+    height: 180px;  /* Slightly smaller image for mobile */
+  }
+
+  .containerStyle {
+    gap: 0.5rem;  /* Reduced gap between text elements */
+  }
+
+  .titleStyle {
+    font-size: 1rem;  /* Smaller title size */
+  }
+
+  .addressStyle {
+    font-size: 0.75rem;  /* Smaller address font size */
+  }
+
+  .priceStyle {
+    font-size: 0.875rem;  /* Smaller price font size */
+  }
+
+  .ratingStyle {
+    font-size: 0.75rem;  /* Smaller rating font size */
+  }
+}
+
+/* For screens below 700px */
+@media (max-width: 700px) {
+  .cardStyle {
+    width: 100%;  /* Full width on smaller screens */
+    padding: 1rem;  /* Adjust padding for smaller screens */
+    margin: 5px;  /* Slight margin for better spacing */
+  }
+
+  .imgStyle {
+    height: 160px;  /* Smaller height for images */
+  }
+
+  .containerStyle {
+    gap: 0.4rem;  /* Reduced space between text */
+  }
+
+  .titleStyle {
+    font-size: 0.95rem;  /* Adjusted title size */
+  }
+
+  .addressStyle {
+    font-size: 0.7rem;  /* Further reduced address font size */
+  }
+
+  .priceStyle {
+    font-size: 0.8rem;  /* Adjusted price font size */
+  }
+
+  .ratingStyle {
+    font-size: 0.7rem;  /* Smaller rating size */
+  }
+}
+
+/* For screens below 480px */
+@media (max-width: 480px) {
+  .cardStyle {
+    width: 100%;  /* Full width on mobile */
+    padding: 0.8rem;  /* Less padding for very small screens */
+    margin: 2px;  /* Adjusted margin for very small screens */
+  }
+
+  .imgStyle {
+    height: 140px;  /* Further reduced image height */
+  }
+
+  .containerStyle {
+    gap: 0.3rem;  /* Even smaller gap between text */
+  }
+
+  .titleStyle {
+    font-size: 0.85rem;  /* Further reduce title font size */
+  }
+
+  .addressStyle {
+    font-size: 0.65rem;  /* Adjust address font size for smaller screens */
+  }
+
+  .priceStyle {
+    font-size: 0.75rem;  /* Adjust price font size for smaller screens */
+  }
+
+  .ratingStyle {
+    font-size: 0.65rem;  /* Smaller rating font size */
+  }
+}
+
+/* For screens below 300px */
+@media (max-width: 300px) {
+  .cardStyle {
+    width: 100%;  /* Ensure the card takes full width */
+    padding: 0.6rem;  /* Further reduce padding */
+    margin: 1px;  /* Minimal margin for very small screens */
+  }
+
+  .imgStyle {
+    height: 120px;  /* Significantly reduced image height */
+  }
+
+  .containerStyle {
+    gap: 0.2rem;  /* Smallest gap for very small screens */
+  }
+
+  .titleStyle {
+    font-size: 0.75rem;  /* Very small font size for title */
+  }
+
+  .addressStyle {
+    font-size: 0.55rem;  /* Small font size for address */
+  }
+
+  .priceStyle {
+    font-size: 0.65rem;  /* Adjusted price font size for very small screens */
+  }
+
+  .ratingStyle {
+    font-size: 0.55rem;  /* Small font size for rating */
+  }
+}
+/* Media Queries for mobile responsiveness */
+@media (max-width: 700px) {
+    .place-card-container {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .place-card-image {
+        max-height: 160px;
+    }
+
+    .place-card-text {
+        font-size: 0.9rem;
+    }
+
+    .place-card-button-container {
+        padding: 0.75rem 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .place-card-container {
+        padding: 0.5rem;
+    }
+
+    .place-card-image {
+        max-height: 140px;
+    }
+
+    .place-card-text {
+        font-size: 0.8rem;
+    }
+
+    .place-card-button-container {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .place-card-container {
+        padding: 0.25rem;
+    }
+
+    .place-card-image {
+        max-height: 120px;
+    }
+
+    .place-card-text {
+        font-size: 0.75rem;
+    }
+
+    .place-card-button-container {
+        padding: 0.25rem;
+    }
+}
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .place-card-container {
+      flex-direction: column; /* Stack the elements vertically on mobile */
+      align-items: center;
+      padding: 1rem;
+  }
+
+  .place-card-image {
+      width: 100%;
+      height: auto;
+  }
+
+  .place-card-text,
+  .place-card-ticket-pricing,
+  .place-card-rating {
+      font-size: 0.875rem;
+  }
+
+  .place-card-button-container {
+      margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .place-card-container {
+      padding: 0.5rem;
+  }
+
+  .place-card-text,
+  .place-card-ticket-pricing,
+  .place-card-rating {
+      font-size: 0.75rem;
+  }
+
+  .place-card-button-container {
+      margin-top: 1rem;
+  }
+}
+
+/* Mobile View Styles */
+@media (max-width: 768px) {
+  /* Ensure container has enough margin and padding on smaller screens */
+  .trip-container {
+    margin-top: 1rem; /* Same as original container style */
+  }
+
+  /* Heading style for mobile view */
+  .trip-heading {
+    font-size: 1.125rem; /* Slightly smaller font for mobile */
+    text-align: center;
+    font-weight: bold;
+  }
+
+  /* Subheading style for mobile view */
+  .trip-subheading {
+    font-size: 1rem; /* Slightly smaller subheading for mobile */
+    font-weight: 500;
+  }
+
+  /* Grid layout for mobile view - stack the items vertically */
+  .trip-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column for smaller screens */
+    gap: 1rem; /* Keep the gap between cards */
+  }
+
+  /* Card container adjustments for mobile */
+  .place-card-container {
+    padding: 1rem; /* Ensure some padding for cards */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between elements in the card */
+    background-color: #fff; /* Card background color */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Card hover effect on mobile */
+  .place-card-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Place card image - make sure it scales properly */
+  .place-card-image {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Adjust the text and ticket info for smaller screens */
+  .place-card-text,
+  .place-card-ticket-pricing,
+  .place-card-rating {
+    font-size: 0.875rem; /* Slightly smaller text for better readability */
+  }
+
+  /* Button container inside card */
+  .place-card-button-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Fallback for no itinerary */
+  .no-itinerary-message {
+    font-style: italic;
+    color: #6B7280;
+    text-align: center;
+  }
+}
+
+/* Smaller mobile view styles for very small screens (400px and below) */
+@media (max-width: 400px) {
+  .trip-heading {
+    font-size: 1rem; /* Smaller font size for very small screens */
+  }
+
+  .trip-subheading {
+    font-size: 0.875rem; /* Even smaller subheading */
+  }
+
+  .trip-grid {
+    grid-template-columns: 1fr; /* Keep items stacked vertically */
+  }
+
+  .place-card-container {
+    padding: 0.75rem; /* Reduce padding for very small screens */
+  }
+
+  .place-card-text {
+    font-size: 0.75rem; /* Make text even smaller for tight screens */
+  }
+}
+/* Mobile view adjustments for screens under 768px */
+@media (max-width: 768px) {
+  .place-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #F9FAFB;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+  }
+
+  /* Image size adjustments for mobile */
+  .place-card-image {
+    width: 100%; /* Full width for the image */
+    height: 150px; /* Fixed height */
+    object-fit: cover;
+    border-radius: 0.75rem;
+  }
+
+  .place-card-details {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    color: #4B5563;
+  }
+
+  .place-card-title {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .place-card-subtitle {
+    color: #FB923C;
+    font-weight: 500;
+  }
+
+  .place-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Adjusting the button for mobile view */
+  .place-card-button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+
+  .place-card-location-btn {
+    background-color: #2563EB; /* Blue background */
+    color: white;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+  }
+
+  .place-card-location-btn:hover {
+    background-color: #1D4ED8; /* Darker blue on hover */
+  }
+
+  .place-card-rating {
+    font-size: 0.875rem;
+    color: #F59E0B;
+  }
+}
+
+/* For very small mobile screens (below 400px) */
+@media (max-width: 400px) {
+  .place-card-container {
+    padding: 0.5rem;
+    gap: 0.25rem;
+  }
+
+  .place-card-image {
+    height: 120px; /* Smaller height for tiny screens */
+  }
+
+  .place-card-title {
+    font-size: 0.875rem; /* Smaller title */
+  }
+
+  .place-card-info {
+    font-size: 0.75rem; /* Smaller text for tiny screens */
+  }
+}

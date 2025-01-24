@@ -1,0 +1,220 @@
+/* Main Container */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 14rem; /* mx-56 (28rem / 2) */
+    margin-right: 14rem; /* mx-56 (28rem / 2) */
+    gap: 2.25rem; /* gap-9 */
+    text-align: center; /* Ensures everything is centered */
+  }
+  
+  /* Heading */
+  .hero-heading {
+    font-weight: 800; /* font-extrabold */
+    font-size: 3.75rem; /* text-[60px] */
+    margin-top: 4rem; /* mt-16 */
+  }
+  
+  .hero-heading span {
+    color: darkblue; /* text-[darkblue] */
+  }
+  
+  /* Paragraph */
+  .hero-paragraph {
+    font-size: 1.25rem; /* text-xl */
+    color: #6B7280; /* text-gray-500 */
+    margin-top: 1rem; /* Add some space from the heading */
+  }
+  
+  /* Button */
+  .hero-button {
+    padding: 1rem 2rem;
+    background-color: #3B82F6; /* bg-blue-500 */
+    color: white;
+    border-radius: 9999px; /* rounded-full */
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem; /* Adds spacing between button and paragraph */
+  }
+  
+  .hero-button:hover {
+    background-color: #2563EB; /* hover:bg-blue-600 */
+  }
+  
+  
+  /* Image */
+.hero-image {
+    margin-top: 2rem; 
+    width: 100%; 
+    max-width: 1200px; 
+    height: auto; 
+    object-fit: contain; 
+  }
+  /* Main Container */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 14rem; /* mx-56 (28rem / 2) */
+  margin-right: 14rem; /* mx-56 (28rem / 2) */
+  gap: 2.25rem; /* gap-9 */
+  text-align: center; /* Ensures everything is centered */
+}
+
+@media (max-width: 700px) {
+  .hero-container {
+    margin-left: 2rem; /* Adjust margins for smaller screens */
+    margin-right: 2rem; /* Adjust margins for smaller screens */
+    gap: 1.5rem; /* Reduced gap on smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-container {
+    margin-left: 1rem; /* Further adjust margins */
+    margin-right: 1rem; /* Further adjust margins */
+    gap: 1rem; /* Further reduce gap on very small screens */
+  }
+}
+
+@media (max-width: 200px) {
+  .hero-container {
+    margin-left: 0.5rem; /* Very small margin for very small screens */
+    margin-right: 0.5rem; /* Very small margin for very small screens */
+    gap: 0.75rem; /* Very small gap for tiny screens */
+  }
+}
+
+/* Heading */
+.hero-heading {
+  font-weight: 800; /* font-extrabold */
+  font-size: 3.75rem; /* text-[60px] */
+  margin-top: 4rem; /* mt-16 */
+}
+
+.hero-heading span {
+  color: darkblue; /* text-[darkblue] */
+}
+
+@media (max-width: 700px) {
+  .hero-heading {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+    margin-top: 3rem; /* Reduced margin for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-heading {
+    font-size: 2.5rem; /* Smaller font for very small screens */
+    margin-top: 2rem; /* Further reduced margin for very small screens */
+  }
+}
+
+@media (max-width: 200px) {
+  .hero-heading {
+    font-size: 2rem; /* Smallest font size for extremely small screens */
+    margin-top: 1.5rem; /* Reduced margin even more */
+  }
+}
+
+/* Paragraph */
+.hero-paragraph {
+  font-size: 1.25rem; /* text-xl */
+  color: #6B7280; /* text-gray-500 */
+  margin-top: 1rem; /* Add some space from the heading */
+}
+
+@media (max-width: 700px) {
+  .hero-paragraph {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin-top: 0.75rem; /* Reduced margin for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-paragraph {
+    font-size: 0.875rem; /* Smaller font for very small screens */
+    margin-top: 0.5rem; /* Further reduced margin for very small screens */
+  }
+}
+
+@media (max-width: 200px) {
+  .hero-paragraph {
+    font-size: 0.75rem; /* Smallest font for extremely small screens */
+    margin-top: 0.25rem; /* Minimum margin for tiny screens */
+  }
+}
+
+/* Button */
+.hero-button {
+  padding: 1rem 2rem;
+  background-color: #3B82F6; /* bg-blue-500 */
+  color: white;
+  border-radius: 9999px; /* rounded-full */
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 2rem; /* Adds spacing between button and paragraph */
+}
+
+.hero-button:hover {
+  background-color: #2563EB; /* hover:bg-blue-600 */
+}
+
+@media (max-width: 700px) {
+  .hero-button {
+    padding: 0.75rem 1.5rem; /* Smaller button size for smaller screens */
+    font-size: 0.875rem; /* Smaller font size */
+    margin-top: 1.5rem; /* Reduced margin for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-button {
+    padding: 0.5rem 1rem; /* Even smaller button size for very small screens */
+    font-size: 0.75rem; /* Even smaller font for very small screens */
+    margin-top: 1rem; /* Further reduced margin for very small screens */
+  }
+}
+
+@media (max-width: 200px) {
+  .hero-button {
+    padding: 0.25rem 0.75rem; /* Tiny button for tiny screens */
+    font-size: 0.625rem; /* Tiny font size for tiny screens */
+    margin-top: 0.5rem; /* Minimum margin for very small screens */
+  }
+}
+
+/* Image */
+.hero-image {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .hero-image {
+    max-width: 100%; /* Ensure image scales to fit smaller screens */
+    margin-top: 1.5rem; /* Adjust margin for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-image {
+    max-width: 100%; /* Ensure image fits very small screens */
+    margin-top: 1rem; /* Adjust margin for very small screens */
+  }
+}
+
+@media (max-width: 200px) {
+  .hero-image {
+    max-width: 100%; /* Ensure image fits even smaller screens */
+    margin-top: 0.5rem; /* Adjust margin for the smallest screens */
+  }
+}
